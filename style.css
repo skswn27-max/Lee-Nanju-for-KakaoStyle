@@ -1,28 +1,30 @@
 /* =============================================
-   Brand Maker 포트폴리오 - 한화손해보험 Theme
-   - 한화 오렌지 컬러 시스템 적용
+   Brand Maker 포트폴리오 - 카카오스타일/지그재그 Theme
+   - 지그재그 핑크 & 퍼플 컬러 시스템 적용
    ============================================= */
 
-/* CSS 변수 - 한화손해보험 스타일 */
+/* CSS 변수 - 카카오스타일 스타일 */
 :root {
     --primary: #1a1a1a;
     
-    /* 한화 오렌지 컬러 시스템 */
-    --hanwha-orange: #F37321;
-    --hanwha-orange-70: #F89B6C;
-    --hanwha-orange-50: #FBB584;
-    --hanwha-orange-light: rgba(243, 115, 33, 0.1);
-    --hanwha-orange-medium: rgba(243, 115, 33, 0.15);
+    /* 지그재그/카카오스타일 컬러 시스템 */
+    --zigzag-pink: #FF2D78;
+    --zigzag-pink-70: #FF6A9E;
+    --zigzag-pink-50: #FF9ABB;
+    --zigzag-pink-light: rgba(255, 45, 120, 0.1);
+    --zigzag-pink-medium: rgba(255, 45, 120, 0.15);
+    --zigzag-purple: #7B61FF;
+    --zigzag-purple-light: rgba(123, 97, 255, 0.1);
     
-    --accent: #F37321;
-    --accent-hover: #E5651A;
-    --accent-light: rgba(243, 115, 33, 0.1);
+    --accent: #FF2D78;
+    --accent-hover: #E01A63;
+    --accent-light: rgba(255, 45, 120, 0.1);
     
     --bg: #ffffff;
     --bg-subtle: #FAFAFA;
     --bg-card: #ffffff;
     --bg-dark: #1a1a1a;
-    --bg-warm: #FFF9F5;
+    --bg-warm: #FFF5F8;
 
     --text: #1a1a1a;
     --text-sub: #555555;
@@ -31,14 +33,14 @@
 
     --border: rgba(0, 0, 0, 0.08);
     --border-strong: rgba(0, 0, 0, 0.15);
-    --border-accent: rgba(243, 115, 33, 0.3);
+    --border-accent: rgba(255, 45, 120, 0.3);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
     --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --shadow-accent: 0 4px 20px rgba(243, 115, 33, 0.15);
+    --shadow-accent: 0 4px 20px rgba(255, 45, 120, 0.15);
 
     --problem-color: #1a1a1a;
-    --solution-color: #F37321;
-    --result-color: #F37321;
+    --solution-color: #FF2D78;
+    --result-color: #FF2D78;
     --insight-color: #1a1a1a;
 
     --radius-lg: 12px;
@@ -46,22 +48,22 @@
     --radius-sm: 4px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     
-    /* 하이라이트 - 한화 오렌지 */
-    --highlight-yellow: rgba(243, 115, 33, 0.12);
-    --highlight-green: rgba(243, 115, 33, 0.18);
-    --highlight-blue: rgba(243, 115, 33, 0.1);
+    /* 하이라이트 - 지그재그 핑크 */
+    --highlight-yellow: rgba(255, 45, 120, 0.12);
+    --highlight-green: rgba(255, 45, 120, 0.18);
+    --highlight-blue: rgba(123, 97, 255, 0.1);
 }
 
-/* 텍스트 하이라이트 - 한화 스타일 */
+/* 텍스트 하이라이트 - 카카오스타일 */
 .hl-yellow {
     font-weight: 700;
     color: var(--text);
-    background: linear-gradient(180deg, transparent 60%, var(--hanwha-orange-light) 60%);
+    background: linear-gradient(180deg, transparent 60%, var(--zigzag-pink-light) 60%);
 }
 
 .hl-green {
     font-weight: 700;
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
 }
 
 /* 목차 섹션 */
@@ -101,17 +103,17 @@
 
 .toc-item:hover {
     padding-left: 16px;
-    background: var(--hanwha-orange-light);
+    background: var(--zigzag-pink-light);
 }
 
 .toc-item.featured {
-    border-left: 3px solid var(--hanwha-orange);
+    border-left: 3px solid var(--zigzag-pink);
     padding-left: 16px;
-    background: var(--hanwha-orange-light);
+    background: var(--zigzag-pink-light);
 }
 
 .toc-item.featured:hover {
-    background: var(--hanwha-orange-medium);
+    background: var(--zigzag-pink-medium);
 }
 
 .featured-badge {
@@ -123,7 +125,7 @@
     letter-spacing: 0.05em;
     margin-left: 12px;
     padding: 3px 10px;
-    background: var(--hanwha-orange);
+    background: var(--zigzag-pink);
     border-radius: var(--radius-sm);
     vertical-align: middle;
 }
@@ -410,13 +412,13 @@ body {
 
 .hero-tagline {
     font-size: 0.75rem;
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
     letter-spacing: 0.2em;
     text-transform: uppercase;
     margin-bottom: 20px;
     display: inline-block;
     padding: 12px 20px;
-    background: rgba(243, 115, 33, 0.15);
+    background: rgba(255, 45, 120, 0.15);
     border-radius: var(--radius-sm);
 }
 
@@ -483,7 +485,7 @@ section {
 
 .section-label {
     font-size: 0.75rem;
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
     font-weight: 600;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -514,9 +516,9 @@ section {
 }
 
 .how-i-work .section-title .highlight {
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
     font-weight: 700;
-    border-bottom: 3px solid var(--hanwha-orange);
+    border-bottom: 3px solid var(--zigzag-pink);
     padding-bottom: 2px;
 }
 
@@ -656,9 +658,9 @@ section {
 
 .project-index {
     font-size: 1rem;
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
     font-weight: 700;
-    background: var(--hanwha-orange-light);
+    background: var(--zigzag-pink-light);
     padding: 6px 12px;
     border-radius: var(--radius-sm);
     letter-spacing: 0.05em;
@@ -711,7 +713,7 @@ section {
 }
 
 .project-summary strong {
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
     font-weight: 700;
 }
 
@@ -733,8 +735,8 @@ section {
     padding: 8px 16px;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-accent);
-    background: var(--hanwha-orange-light);
-    color: var(--hanwha-orange);
+    background: var(--zigzag-pink-light);
+    color: var(--zigzag-pink);
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.02em;
@@ -742,9 +744,9 @@ section {
 }
 
 .chip:hover {
-    background: var(--hanwha-orange);
+    background: var(--zigzag-pink);
     color: white;
-    border-color: var(--hanwha-orange);
+    border-color: var(--zigzag-pink);
 }
 
 .strengths-note {
@@ -835,8 +837,8 @@ section {
     font-weight: 700;
     letter-spacing: 0.1em;
     margin-bottom: 16px;
-    color: var(--hanwha-orange);
-    background: var(--hanwha-orange-light);
+    color: var(--zigzag-pink);
+    background: var(--zigzag-pink-light);
     padding: 4px 10px;
     border-radius: var(--radius-sm);
 }
@@ -885,8 +887,8 @@ section {
     margin: 0 0 16px 0;
     padding: 20px 24px;
     border-radius: var(--radius-md);
-    background: var(--hanwha-orange-light);
-    border-left: 4px solid var(--hanwha-orange);
+    background: var(--zigzag-pink-light);
+    border-left: 4px solid var(--zigzag-pink);
     color: var(--text);
     font-size: 0.95rem;
     font-weight: 600;
@@ -1093,22 +1095,22 @@ section {
     align-items: center;
     gap: 12px;
     padding: 12px 20px;
-    background: var(--hanwha-orange-light);
+    background: var(--zigzag-pink-light);
     border: 1px solid var(--border-accent);
     border-radius: var(--radius-sm);
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
     transition: var(--transition);
 }
 
 .flow-step:hover {
-    background: var(--hanwha-orange);
+    background: var(--zigzag-pink);
     color: white;
 }
 
 .flow-arrow {
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
     font-size: 1.2rem;
 }
 
@@ -1497,7 +1499,7 @@ section {
 .brand-metric .metric-value {
     font-size: 1.3rem;
     font-weight: 700;
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
 }
 
 .brand-metric .metric-desc {
@@ -1526,7 +1528,7 @@ section {
     padding: 16px 20px;
     background: var(--bg-subtle);
     border-radius: var(--radius-md);
-    border-left: 3px solid var(--hanwha-orange);
+    border-left: 3px solid var(--zigzag-pink);
 }
 
 .method-step {
@@ -2101,7 +2103,7 @@ section {
 }
 
 .philosophy-item:hover {
-    border-color: var(--hanwha-orange);
+    border-color: var(--zigzag-pink);
     box-shadow: var(--shadow-accent);
 }
 
@@ -2109,7 +2111,7 @@ section {
     font-size: 0.85rem;
     font-weight: 700;
     color: white;
-    background: var(--hanwha-orange);
+    background: var(--zigzag-pink);
     padding: 6px 12px;
     border-radius: var(--radius-sm);
     flex-shrink: 0;
@@ -2215,10 +2217,10 @@ section {
     font-size: 0.75rem;
     font-weight: 600;
     padding: 4px 12px;
-    background: var(--hanwha-orange-light);
+    background: var(--zigzag-pink-light);
     border: 1px solid var(--border-accent);
     border-radius: var(--radius-sm);
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
 }
 
 .timeline-achievements,
@@ -2459,7 +2461,7 @@ section {
 }
 
 .contribution-card:hover {
-    border-color: var(--hanwha-orange);
+    border-color: var(--zigzag-pink);
     transform: translateY(-4px);
     box-shadow: var(--shadow-accent);
 }
@@ -2467,14 +2469,14 @@ section {
 .contribution-icon {
     font-size: 2rem;
     margin-bottom: 16px;
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
 }
 
 .contribution-card h4 {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 12px;
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
 }
 
 .contribution-card > p {
@@ -2485,7 +2487,7 @@ section {
 }
 
 .contribution-card strong {
-    color: var(--hanwha-orange);
+    color: var(--zigzag-pink);
 }
 
 .contribution-proof {
@@ -2667,8 +2669,8 @@ section {
 }
 
 .contact-description em {
-    color: var(--hanwha-orange);
-    background: linear-gradient(transparent 60%, var(--hanwha-orange-light) 60%);
+    color: var(--zigzag-pink);
+    background: linear-gradient(transparent 60%, var(--zigzag-pink-light) 60%);
     padding: 0 6px;
     border-radius: 4px;
     font-style: normal;
@@ -2694,8 +2696,8 @@ section {
 }
 
 .contact-link:hover {
-    border-color: var(--hanwha-orange);
-    background: var(--hanwha-orange-light);
+    border-color: var(--zigzag-pink);
+    background: var(--zigzag-pink-light);
     box-shadow: var(--shadow-accent);
 }
 
